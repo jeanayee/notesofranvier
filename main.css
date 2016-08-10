@@ -4,10 +4,11 @@ body {
 }
 
 header {
-  padding: 20px 0;
+  padding: 40px 0;
+  text-align: center;
 }
 
-header .row,
+/**header .row, **/
 footer .row {
   display: flex;
   align-items: center;
@@ -19,8 +20,9 @@ header h1 {
 }
 
 header nav {
+  padding: 30px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 header p {
@@ -201,8 +203,9 @@ footer li img {
 
 .slide-feature {
   text-align: center;
-  background-image: url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/ac.png');
+  background-image: url('https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/12744763_10207060931256156_7307036389499684663_n.jpg?oh=ca9c8e55ca604bd4b5c188dc5f637b3a&oe=581EBB48');
   height: 470px;
+  background-position: 0px 10px;
 }
 
 .slide-feature img {
