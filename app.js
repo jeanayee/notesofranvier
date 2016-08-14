@@ -1,4 +1,15 @@
 var main = function() {
+  //Sticky navigation
+  var $nav = $('.navigation')
+  var posTop = $nav.position().top;
+  $(window).scroll(function () {
+    var y = $(this).scrollTop();
+    if (y > posTop) {
+      $nav.addClass('fixed');
+    } else { $nav.removeClass('fixed'); }
+  });
+
+  //Next Arrow
   $('.arrow-next').click(function() {
     var currentSlide = $('.active-slide');
     var nextSlide = currentSlide.next();
@@ -8,7 +19,6 @@ var main = function() {
     if (nextSlide.length == 0) {
       nextSlide = $('.slide').first();
       nextDot = $('.dot').first();
-
     }
     currentSlide.fadeOut(600).removeClass('active-slide');
     nextSlide.fadeIn(600).addClass('active-slide');
@@ -17,6 +27,7 @@ var main = function() {
     nextDot.addClass('active-dot');
   });
 
+  //Previous Arrow
   $('.arrow-prev').click(function() {
     var currentSlide = $('.active-slide');
     var prevSlide = currentSlide.prev();
@@ -26,11 +37,9 @@ var main = function() {
     if (prevSlide.length == 0) {
       prevSlide = $('.slide').last();
       prevDot = $('.dot').last();
-
     }
-    currentSlide.fadeOut(600).removeClass('active-slide');
+         currentSlide.fadeOut(600).removeClass('active-slide');
     prevSlide.fadeIn(600).addClass('active-slide');
-
     currentDot.removeClass('active-dot');
     prevDot.addClass('active-dot');
   });
