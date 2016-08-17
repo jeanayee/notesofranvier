@@ -1,7 +1,9 @@
 var main = function() {
-
+  $('.carousel').carousel({
+      interval: 1000
+    });
   //Next Arrow
-  $('.arrow-next').click(function() {
+/**  $('.arrow-next').click(function() {
     var currentSlide = $('.active-slide');
     var nextSlide = currentSlide.next();
     var currentDot = $('.active-dot');
@@ -35,5 +37,5 @@ var main = function() {
     prevDot.addClass('active-dot');
   });
 }
-
+**/
 $(document).ready(main);
