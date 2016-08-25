@@ -1,5 +1,12 @@
+gold {
+  color: gold;
+}
+
+.gray { /*members */
+  color: #a5a5a5;
+}
+
 body {
-font-family: 'Life Savers', cursive;
   font-family: 'Shadows Into Light', cursive;
   font-weight: 300;
   background: #E8DFE0;
@@ -10,17 +17,17 @@ font-family: 'Life Savers', cursive;
   opacity: 1;
 }
 
+p {
+  font-family: 'Times New Roman', serif;
+  font-size: 18px;
+}
+
 header {
   width: 100%;
   margin: 10px;
 }
 
-footer .row {
-  display: flex;
-  align-items: center;
-}
-
-header h1 {
+header h1 { /*NOTES of RANVIER*/
   font-family: 'Fredericka the Great', cursive;
   font-weight: 700;
   text-align: center;
@@ -30,25 +37,27 @@ header h1 {
   background-position: center top;
 }
 
-header h3 {
+header h3 { /*JHU CoEd Service A Cappella */
   font-family: 'Life Savers', cursive;
   font-weight: bolder;
 }
 
-gold {
-  color: gold;
-}
-
-header .col-sm-6 {
+.title {
   font-family: 'Fredericka the Great', cursive;
   color: gold;
   font-size: 70px;
   position: relative;
-  top: 40px;
+  top: 30px;
   justify-content: center;
   align-content: center;
   align-items: center;
   text-align: center;
+}
+
+.subtitle {
+    padding: 10px;
+    font-size: 30px;
+    font-family: 'Life Savers', cursive;
 }
 
 .navigation {
@@ -62,26 +71,18 @@ nav a {
   color: grey;
 }
 
-nav a:hover,
-.active {
+nav a:hover, .active {
   transition: all 1000ms ease;
   color: gold;
   text-decoration: none;
   z-index: 2;
-  text-shadow: 2px 2px 5px teal;
   text-shadow: 1px 1px 2px black, 0 0 25px #2998E4, 0 0 5px darkblue;
 }
 
-section .row img {
-  width: 100%;
-}
-.col-md-6 {
-  margin: 0 0 30px;
-}
-
+/* FOOTER **/
 footer {
-  font-size: 12px;
-  padding: 20px 0;
+  font-size: 10px;
+  padding: 20px 10px;
 }
 footer .col-sm-8 {
   display: flex;
@@ -97,17 +98,16 @@ footer li img {
 
 /** Slider navigation **/
 .item {
-  height: 420px;
+  height: 420px; /**CHANGE HEIGHT WHEN DIFFERENT SIZE SCREEN **/
   text-align: center;
   border-bottom: 1px solid #ddd;
-
 }
 
-img {
+.item img {
   margin-left: auto;
   margin-right: auto;
-  /** FOR HOME PAGE PAPER EFFECT -webkit-filter: drop-shadow(5px 5px 5px #222);
-  filter: drop-shadow(-5px -5px 5px #222); **/
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(-5px -5px 5px #222);
   width: 1000px;
 }
 
@@ -117,33 +117,19 @@ img {
   /** background-image: none; **/
 }
 
-
-/** ABOUT **/
-.jumbotron {
-  background: transparent;
+/**NEWS**/
+section .row img {
+  width: 100%;
 }
 
-
-
-/** MEMBERS V1 **/
-.gray {
-  color: #a5a5a5;
-}
-
-.team{
-  margin:10px;
-}
-
+/** MEMBERS**/
 .team-member {
   margin: 15px 0;
-  padding: 0;
 }
 
 .team-member figure {
   position: relative;
   overflow: hidden;
-  padding: 0;
-  margin: 0;
 }
 
 .team-member figure img {
@@ -179,7 +165,7 @@ img {
 }
 
 .team-member figcaption {
-  padding: 50px;
+  padding: 10px;
   color: transparent;
   background-color: transparent;
   position: absolute;
