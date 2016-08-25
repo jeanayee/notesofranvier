@@ -39,7 +39,7 @@ gold {
   color: gold;
 }
 
-.col-sm-6 {
+header .col-sm-6 {
   font-family: 'Fredericka the Great', cursive;
   color: gold;
   font-size: 70px;
@@ -69,7 +69,7 @@ nav a:hover,
   text-decoration: none;
   z-index: 2;
   text-shadow: 2px 2px 5px teal;
-  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  text-shadow: 1px 1px 2px black, 0 0 25px #2998E4, 0 0 5px darkblue;
 }
 
 section .row img {
@@ -78,22 +78,7 @@ section .row img {
 .col-md-6 {
   margin: 0 0 30px;
 }
-.btn.btn-primary {
-  border-radius: 2px;
-  border: 0px;
-  color: #fbd1d5;
-  text-shadow: none;
-  background-color: #ffffff;
-}
-.btn.btn-primary:hover {
-  color: #ffffff;
-  background-color: #fbd1d5;
-}
-.btn-secondary {
-  background-color: #E8DFE0;
-  color: #ffffff;
-  margin: 0 0 30px;
-}
+
 footer {
   font-size: 12px;
   padding: 20px 0;
@@ -256,7 +241,6 @@ iframe {
   padding: 5px;
   border: 10px solid black;
   margin-top: 20px;
-
 }
 
 /* Normal Button */
@@ -283,7 +267,7 @@ button.outline:hover {
   border-color: #gold;
   color: #gold;
   box-shadow: 0 0 0 0.1875rem white,
-              0 0 0 0.375rem black;
+              0 0 0 0.375rem #2998E4;
   transition-duration: 500ms;
 }
 
@@ -401,4 +385,9 @@ input[type="checkbox"]:checked ~ .grid {
   max-width: 100%;
   max-height: 100%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.audition img {
+  max-width: 100%;
+  margin: auto;
 }

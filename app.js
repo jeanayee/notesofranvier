@@ -2,6 +2,10 @@ var main = function() {
   $('.carousel').carousel({
       interval: 1000
     });
+
+  $('body').css("opacity", "0.125"); //if media gallery2 grid-item is clicked, doesn't currently work :(
+
+
   //Next Arrow
 /**  $('.arrow-next').click(function() {
     var currentSlide = $('.active-slide');
