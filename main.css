@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light|Didact+Gothic|Fredericka+the+Great|Amatic+SC|Amatica+SC|Oswald|Hind|Montserrat|Josefin+Slab|Josefin+Sans');
+
 gold {
   color: gold;
 }
@@ -7,8 +9,11 @@ gold {
 }
 
 body {
-  font-family: 'Shadows Into Light', cursive;
-  font-weight: 300;
+  font-family: 'Indie Flower', cursive;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Didact Gothic', sans-serif;
+
   background: #E8DFE0;
   background: -webkit-linear-gradient(#E8DFE0, tan);
   background: -o-linear-gradient(#E8DFE0, tan);
@@ -18,7 +23,6 @@ body {
 }
 
 p {
-  font-family: 'Times New Roman', serif;
   font-size: 18px;
 }
 
@@ -28,7 +32,10 @@ header {
 }
 
 header h1 { /*NOTES of RANVIER*/
+  font-family: 'Josefin Slab', serif;
+  font-family: 'Amatic SC', serif;
   font-family: 'Fredericka the Great', cursive;
+
   font-weight: 700;
   text-align: center;
   background: url('img/neuron2.png');
@@ -39,11 +46,20 @@ header h1 { /*NOTES of RANVIER*/
 
 header h3 { /*JHU CoEd Service A Cappella */
   font-family: 'Life Savers', cursive;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Amatica SC', cursive;
+  letter-spacing: 4px;
+  font-size: 25px;
   font-weight: bolder;
+  position: relative;
+  top: -10px;
 }
 
 .title {
+  font-family: 'Josefin Slab', serif;
+  font-family: 'Amatic SC', serif;
   font-family: 'Fredericka the Great', cursive;
+
   color: gold;
   font-size: 70px;
   position: relative;
@@ -55,9 +71,9 @@ header h3 { /*JHU CoEd Service A Cappella */
 }
 
 .subtitle {
-    padding: 10px;
-    font-size: 30px;
-    font-family: 'Life Savers', cursive;
+    padding: 5px;
+    font-size: 40px;
+    font-family: 'Amatica SC', cursive;
 }
 
 .navigation {
@@ -82,6 +98,7 @@ nav a:hover, .active {
 /* FOOTER **/
 footer {
   font-size: 10px;
+  font-family: 'Amatica SC', cursive;
   padding: 20px 10px;
 }
 footer .col-sm-8 {
@@ -162,6 +179,15 @@ section .row img {
 .team-member h4 {
   margin: 10px 0 0;
   padding: 0;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.team-member h3 { /*SINGING PART*/
+  font-family: 'Amatica SC', cursive;
+  font-weight: bold;
+  font-size: 45px;
+  color: #2998E4;
 }
 
 .team-member figcaption {
@@ -229,6 +255,12 @@ iframe {
   margin-top: 20px;
 }
 
+h2 {
+  font-family: 'Amatica SC', cursive;
+  font-weight: bold;
+  font-size: 40px;
+}
+
 /* Normal Button */
 button {
   display: inline-block;
@@ -241,6 +273,7 @@ button {
   transition: all 150ms ease-out;
   width: 300px;
   letter-spacing: 4px;
+  font-weight: bold;
 }
 
 /* Outline Button */
